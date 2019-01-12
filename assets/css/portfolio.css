@@ -1,0 +1,121 @@
+.img-grid-block {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.column {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    margin-top: 0.5rem;
+    vertical-align: middle;
+}
+
+.img-grid-block .row {
+    padding: 0.25rem 0;
+}
+
+.img-grid-block .col-4 {
+    padding: 0 0.25rem;
+}
+
+.other-portfolios {
+    margin-bottom: 5rem;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-image: linear-gradient(to right, transparent, #141516, transparent);
+    border-image-slice: 1;
+    border-left: 0;
+    border-right: 0;
+    text-align: center;
+}
+
+.other-portfolios ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.other-portfolios ul li {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    margin: 0 3rem;
+}
+
+.other-portfolios ul li a {
+    color: #141516;
+    padding: 1rem 0;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.other-portfolios ul li a:hover {
+    text-decoration: none;
+    text-shadow: 1px 3px #aaa;
+}
+
+.social-arena h2 {
+    margin-bottom: 2rem;
+}
+
+.social-arena a {
+    font-size: 5rem;
+    color: #141516;
+    transition: 0.5s;
+}
+
+.social-arena a:hover {
+    text-decoration: none;
+    text-shadow: 0.15rem 0.2rem #aaa;
+}
+
+/****************    Media Queries    ****************/
+
+@media screen and (max-width: 991px) and (min-width: 576px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+  #column-3-1, #column-3-2 {
+    flex: 50%;
+    max-width: 50%;
+  }
+  #column-3-1 {
+      padding-right: 4px;
+  }
+  #column-3-2 {
+      padding-left: 4px;
+  }
+  .column-3 {
+      display: flex;
+      flex: 100%;
+      max-width: 100%;
+  }
+  .column-3 img {
+      /* width: calc(100% - 4px); */
+      height: auto;
+  }
+  .column .odd {
+      padding-right: 4px;
+  }
+  .column .even {
+      padding-left: 4px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .other-portfolios ul li {
+        margin: 0 1rem;
+    }
+}

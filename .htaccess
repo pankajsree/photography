@@ -1,0 +1,47 @@
+# RewriteEngine On
+# # RewriteCond %{HTTP_HOST} ^localhost:81 [NC]
+#
+# # Deny Directory Listing Permission
+# Options -Indexes
+#
+# # non-www to www
+#
+# RewriteEngine On
+# RewriteCond %{HTTP_HOST} !^www.litmassmedia.com$ [NC]
+# RewriteRule ^(.*)$ http://www.litmassmedia.com/$1 [L,R=301]
+#
+# # http to https redirect
+#
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#
+# # index.php to https://www.litmassmedia.com/ redirect
+#
+# RewriteCond %{THE_REQUEST} ^.*/index\.php
+# RewriteRule ^(.*)index.php$ /$1 [R=301,L]
+#
+# #remove html file extension-e.g. https://example.com/file.html will become https://example.com/file
+#
+# RewriteEngine on
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME}\.html -f
+# RewriteRule ^(.*)$ $1.html [NC,L]
+#
+# # remove php file extension-e.g. https://example.com/file.php will become https://example.com/file
+#
+# RewriteEngine on
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME}\.php -f
+# RewriteRule ^(.*)$ $1.php [NC,L]
+#
+#
+# # IMAGE CACHING
+#
+# <IfModule mod_expires.c>
+#     ExpiresActive on
+#
+#     ExpiresByType image/jpg "access plus 1 month"
+#     ExpiresByType image/jpeg "access plus 1 month"
+#     ExpiresByType image/gif "access plus 1 month"
+#     ExpiresByType image/png "access plus 1 month"
+# </IfModule>

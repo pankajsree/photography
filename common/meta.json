@@ -1,0 +1,35 @@
+{
+    "home" : {
+        "carousel" : 7
+    },
+
+    "services" : {
+        "wedding" : {
+            "section" : 3
+        },
+        "fashion" : {
+            "section" : 2
+        },
+        "food" : {
+            "section" : 2
+        },
+        "corporate" : {
+            "section" : 2
+        }
+    },
+
+    "portfolio" : {
+        "wedding" : {
+            "count" : 24
+        },
+        "fashion" : {
+            "count" : 10
+        },
+        "food" : {
+            "count" : 6
+        },
+        "corporate" : {
+            "count" : 0
+        }
+    }
+}
