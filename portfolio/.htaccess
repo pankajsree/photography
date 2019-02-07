@@ -1,0 +1,5 @@
+RewriteEngine On
+
+RewriteRule ^wedding.php/(.*)$ wedding.php?type=$1 [NC]
+RewriteRule ^wedding.php/$ wedding.php?type=pre [NC]
+RewriteRule ^wedding.php$ wedding.php?type=pre [NC]

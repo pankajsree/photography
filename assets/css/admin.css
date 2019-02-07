@@ -1,0 +1,59 @@
+body {
+    padding-top: 5rem;
+}
+
+#logout {
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+}
+
+#dashboard {
+    position: fixed;
+    top: 4rem;
+    left: 2rem;
+}
+
+#btn-submit, #logout, #dashboard {
+    z-index: 9999;
+}
+
+#admin-name {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.dash-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.dash-blocks .link-button {
+    font-size: 1.1rem;
+    padding: 2rem 5rem;
+    letter-spacing: 3px;
+    margin: 1.5rem 1rem;
+}
+
+.pos-rel {
+    width: 100%;
+    min-height: 15rem;
+}
+
+.uploaded {
+    background-color: rgba(0, 255, 0, 0.5) !important;
+}
+
+/****************    Media Queries    ****************/
+
+@media only screen
+    and (max-width: 575px) {
+    #admin-name {
+        display: none !important;
+    }
+}

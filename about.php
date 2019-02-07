@@ -1,5 +1,15 @@
 <?php
     require_once("common/common.php");
+    require_once("config/db-config.php");
+
+    $query = "SELECT `about`, `abhi`, `deep` FROM `text_about`";
+    $result = mysqli_query($conn, $query);
+    if(!$result) {
+        echo mysqli_error($conn);
+        die($query);
+    }
+
+    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +27,7 @@
 
             <div class="pad-v-5 block container">
                 <h1><span class="pad-h-1 b-b-black">About us</span></h1>
-                <p class="content-w-80">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="content-w-80"><?= $row['about'] ?></p>
 
                 <div class="pad-t-5 container">
                     <div class="row flex-row colored-block">
@@ -31,7 +41,7 @@
                                 <h4 class="no-mar">Abhijit Deb</h4>
                                 <p class="font-weight-bold">Commercial Photographer</p>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    <?= $row['abhi'] ?>
                                 </p>
                                 <p>
                                     <div class="social-container">
@@ -62,7 +72,7 @@
                                 <h4 class="no-mar">Deep Roy</h4>
                                 <p class="font-weight-bold">Commercial Photographer</p>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    <?= $row['deep'] ?>
                                 </p>
                                 <p>
                                     <div class="social-container">

@@ -63,6 +63,11 @@ header a:hover {
     padding-bottom: 3rem !important;
 }
 
+.pad-v-0-5 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
 .mar-t-4-5 {
     margin-top: 4.5rem;
 }
@@ -204,6 +209,10 @@ button:focus {
     text-align: center;
 }
 
+.navbar-nav li a {
+    font-size: 1.2rem;
+}
+
 .customed-fluid {
     padding: 0;
 }
@@ -296,7 +305,6 @@ button:focus {
 }
 
 nav ul {
-    text-transform: uppercase;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -394,7 +402,6 @@ nav ul li a {
 
 h1, h2 {
     text-align: center;
-    text-transform: uppercase;
     margin-bottom: 2rem;
 }
 
@@ -425,6 +432,27 @@ h1, h2 {
     text-decoration: none;
 }
 
+.mid-line {
+    position: relative;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.mid-line:after {
+    content: '';
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    width: 80%;
+    height: 1px;
+    background-color: #111;
+    z-index: -1;
+}
+ .mid-line .text {
+    background-color: #fff;
+    padding: 0 2rem;
+ }
+
 .footer-top {
     height: 10rem;
     background: linear-gradient(to bottom, transparent, #363636);
@@ -432,15 +460,15 @@ h1, h2 {
 
 footer {
     margin-top: 3rem;
-    background-color: #403f3f;
-    color: #fff;
-    color: rgba(255, 255, 255, 0.6);
+    background-color: #CFD8DC;
+    color: #000;
+    color: rgba(0, 0, 0, 0.8);
     padding: 2rem 1rem 1rem 1rem;
 }
 
 footer a, footer a:hover {
-    color: #fff;
-    color: rgba(255, 255, 255, 0.6);
+    color: #000;
+    color: rgba(0, 0, 0, 0.8);
 }
 
 footer ul {
@@ -450,12 +478,12 @@ footer ul {
 
 .b-r-footer {
     border-right: 1px solid #fff;
-    border-color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(0, 0, 0, 0.4);
 }
 
 .b-l-footer {
     border-left: 1px solid #fff;
-    border-color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(0, 0, 0, 0.4);
 }
 
 .b-b-footer {
@@ -472,9 +500,22 @@ footer #footer-block-5 a {
     letter-spacing: 1px;
 }
 
-/* footer #footer-block-5 a {
-    font-size: 3rem;
-} */
+footer #footer-block-3 {
+    padding: 2rem 7.5rem;
+}
+
+footer #footer-block-5 a {
+    font-size: 2rem;
+    padding: 0 0.5rem;
+}
+
+footer #footer-block-5 a:hover {
+    text-decoration: none;
+}
+
+footer h4 {
+    text-decoration: underline;
+}
 
 footer .social {
     padding-top: 0.75rem;
@@ -537,6 +578,14 @@ footer .website-developer a {
     :root {
         font-size: 14px;
     }
+}
+
+@media only screen
+    and (min-width: 576px)
+    and (max-width: 1199px) {
+        footer #footer-block-3 {
+            padding: 2rem 3rem;
+        }
 }
 
 @media only screen
@@ -607,5 +656,13 @@ and (max-width:1199px) {
     }
     .sm-sub-menu a.active .underline {
         width: 100% !important;
+    }
+}
+
+@media only screen
+    and (min-width:1200px)
+    and (max-width: 1400px) {
+    #mobile-menu {
+        margin-left: 7rem;
     }
 }

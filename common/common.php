@@ -4,6 +4,7 @@
 
     $head = "
     <meta charset='utf-8'>
+    <meta name=\"author\" content=\"Pankajsree Das\">
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <link rel='shortcut icon' href='" . __ROOT__ . "images/favicon.png'>
     <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO' crossorigin='anonymous'>
@@ -28,7 +29,7 @@
                     </li><li>
                         <a class='nav-about' href='" . __ROOT__ . "about'>About us<div class='underline'></div></a>
                     </li><li>
-                        <a class='nav-vows' href='" . __ROOT__ . "vows-phereys'>Vows &amp; Phereys<div class='underline'></div></a>
+                        <a class='nav-vnp' href='" . __ROOT__ . "vows-and-phereys'>Vows &amp; Phereys<div class='underline'></div></a>
                     </li><li>
                         <a class='nav-services' href='javascript:void(0);' data-toggle='collapse' data-target='#sm-services'>Services<div class='underline'></div></a>
                         <div id='sm-services' class='sm-sub-menu collapse d-xl-none'>
@@ -103,14 +104,10 @@
                 </ul>
                 <div class='d-block d-xl-inline-block nav-social'>
                     <div class='social-container'>
-                        <a href='https://www.facebook.com/'>
+                        <a id='nav-facebook' href='https://www.facebook.com/Litmassmedia/' target='_blank'>
                             <i class='fab fa-facebook'></i>
-                        </a><a href='https://twitter.com/'>
-                            <i class='fab fa-twitter'></i>
-                        </a><a href='https://www.instagram.com/'>
+                        </a><a id='nav-instagram' href='https://www.instagram.com/' target='_blank'>
                             <i class='fab fa-instagram'></i>
-                        </a><a href='#'>
-                            <i class='fab fa-pinterest'></i>
                         </a>
                     </div>
                 </div>
@@ -130,7 +127,7 @@
         <div class='row text-center pad-btm-1'>
             <div class='col-12 d-block d-sm-none'>
                 <div class='content-w-60 d-inline-block pad-btm-1'>
-                    <img class='img-res' src='" . __ROOT__ . "images/logo.png' alt='' />
+                    <img class='img-res' src='" . __ROOT__ . "images/logo-sq.png' alt='' />
                 </div>
             </div>
             <div id='footer-block-1' class='col-6 col-sm-4 col-lg-4 b-r-footer'>
@@ -144,33 +141,19 @@
             </div>
             <div id='footer-block-3' class='col-6 col-sm-4 d-none d-sm-block text-right text-sm-center'>
                 <div class='relative-middle'>
-                    <img class='v-middle limit-img img-res' src='" . __ROOT__ . "images/logo.png' alt='' />
+                    <img class='v-middle limit-img img-res' src='" . __ROOT__ . "images/logo-sq.png' alt='' />
                 </div>
             </div>
             <div id='footer-block-5' class='col-6 col-sm-4 col-lg-4 b-l-footer'>
-                <div class='relative-middle d-inline-block text-left'>
-                    <ul class='no-mar no-pad no-bullet'>
-                        <li>
-                            <a href='https://www.facebook.com/'>
-                                <i class='fab fa-facebook'></i>&nbsp;&nbsp;litmas_media
-                            </a>
-                        </li>
-                        <li>
-                            <a href='https://twitter.com/'>
-                                <i class='fab fa-twitter'></i>&nbsp;&nbsp;litmas_media
-                            </a>
-                        </li>
-                        <li>
-                            <a href='https://www.instagram.com/'>
-                                <i class='fab fa-instagram'></i>&nbsp;&nbsp;litmas_media
-                            </a>
-                        </li>
-                        <li>
-                            <a href='#'>
-                                <i class='fab fa-pinterest'></i>&nbsp;&nbsp;litmas_media
-                            </a>
-                        </li>
-                    </ul>
+                <div class='relative-middle d-inline-block text-center'>
+
+                    <h4>Litmass Media</h4>
+                    <a href='https://www.facebook.com/Litmassmedia/' target='_blank'><i class='fab fa-facebook'></i></a>
+                    <a href='https://www.instagram.com/' target='_blank'><i class='fab fa-instagram'></i></a>
+
+                    <h4>Vows &amp; Phereys</h4>
+                    <a href='https://www.facebook.com/vowsnphereys/' target='_blank'><i class='fab fa-facebook'></i></a>
+                    <a href='https://www.instagram.com/' target='_blank'><i class='fab fa-instagram'></i></a>
                 </div>
             </div>
         </div>

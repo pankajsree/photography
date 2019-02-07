@@ -1,10 +1,25 @@
 <?php
     require_once("common/common.php");
+    require_once("config/db-config.php");
 
-    $file = file_get_contents('common/meta.json');
-	$meta = json_decode($file, true);
+    $query = "SELECT `litmass`, `vows`, `fashion`, `food`, `corporate` FROM `text_home`";
+    $result = mysqli_query($conn, $query);
+    if(!$result) {
+        echo mysqli_error($conn);
+        die($query);
+    }
 
-    $count = $meta['home']['carousel'];
+    $row_text = mysqli_fetch_array($result, MYSQLI_ASSOC);
+
+    $query = "SELECT `carousel` FROM `images`";
+    $result = mysqli_query($conn, $query);
+    if(!$result) {
+        echo mysqli_error($conn);
+        die($query);
+    }
+
+    $row_count = mysqli_fetch_array($result, MYSQLI_ASSOC);
+    $count = $row_count['carousel'];
 ?>
 
 <!DOCTYPE html>
@@ -63,9 +78,9 @@
             </div>
 
             <div class="pad-v-5 block container">
-                <h1><span class="pad-h-1 b-b-black">Litmass Media</span></h1>
+                <h1 class="text-capitalize"><span class="pad-h-1 b-b-black">Litmass Media</span></h1>
                 <div class="content-w-60">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <?= $row_text['litmass'] ?>
                     <br /><br /><br />
                     <a href="about" class="link-button">Learn More</a>
                 </div>
@@ -73,7 +88,7 @@
 
             <div class="pad-v-5 block container">
                 <!-- <div class="line"></div> -->
-                <h2 class="mid-line"><span class="text">Wedding</span></h2>
+                <h2 class="mid-line"><span class="text">Vows &amp; Phereys</span></h2>
                 <div class="row flex-row colored-block">
                     <div class="col-12 col-lg-7 no-pad">
                         <div class="img-container">
@@ -83,7 +98,7 @@
                     <div class="col-12 col-lg-5">
                         <div class="content-block relative-middle">
                             <div class="content-w-60">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                <?= $row_text['vows'] ?>
                                 <br /><br /><br />
                                 <a href="portfolio/wedding" class="link-button">View Portfolio</a>
                             </div>
@@ -103,7 +118,7 @@
                     <div class="col-12 col-lg-5">
                         <div class="content-block relative-middle">
                             <div class="content-w-60">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                <?= $row_text['fashion'] ?>
                                 <br /><br /><br />
                                 <a href="portfolio/fashion" class="link-button">View Portfolio</a>
                             </div>
@@ -123,7 +138,7 @@
                     <div class="col-12 col-lg-5">
                         <div class="content-block relative-middle">
                             <div class="content-w-60">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                <?= $row_text['food'] ?>
                                 <br /><br /><br />
                                 <a href="portfolio/food" class="link-button">View Portfolio</a>
                             </div>
@@ -143,7 +158,7 @@
                     <div class="col-12 col-lg-5">
                         <div class="content-block relative-middle">
                             <div class="content-w-60">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                <?= $row_text['corporate'] ?>
                                 <br /><br /><br />
                                 <a href="portfolio/corporate" class="link-button">View Portfolio</a>
                             </div>

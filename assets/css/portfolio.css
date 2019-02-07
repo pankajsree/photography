@@ -1,28 +1,13 @@
-.img-grid-block {
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
+.img-grid-block .col-gap {
+    padding: 0.25rem;
 }
 
-.column {
-    flex: 33%;
-    max-width: 33%;
-    padding: 0 4px;
-}
-
-.column img {
-    width: 100%;
-    height: auto;
-    margin-top: 0.5rem;
-    vertical-align: middle;
-}
-
-.img-grid-block .row {
-    padding: 0.25rem 0;
-}
-
-.img-grid-block .col-4 {
-    padding: 0 0.25rem;
+.img-grid-block .caption {
+    font-family: var(--font-2);
+    font-size: 2rem;
+    padding: 2rem;
+    letter-spacing: 0.15rem;
+    text-shadow: 2px 2px #bbb;
 }
 
 .other-portfolios {
@@ -61,61 +46,40 @@
     text-shadow: 1px 3px #aaa;
 }
 
-.social-arena h2 {
+h2 {
+    text-transform: none;
+    /* text-align: left; */
+}
+
+.action-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.action-button {
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin: 1rem 3rem;
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.action-button:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+}
+
+.action-button.active {
+    background-color: #141516;
+    color: #fff;
+}
+
+#p_wedding-page #wedding-videos {
+    text-align: center;
+}
+
+#p_wedding-page #wedding-videos iframe {
     margin-bottom: 2rem;
-}
-
-.social-arena a {
-    font-size: 5rem;
-    color: #141516;
-    transition: 0.5s;
-}
-
-.social-arena a:hover {
-    text-decoration: none;
-    text-shadow: 0.15rem 0.2rem #aaa;
-}
-
-/****************    Media Queries    ****************/
-
-@media screen and (max-width: 991px) and (min-width: 576px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-  #column-3-1, #column-3-2 {
-    flex: 50%;
-    max-width: 50%;
-  }
-  #column-3-1 {
-      padding-right: 4px;
-  }
-  #column-3-2 {
-      padding-left: 4px;
-  }
-  .column-3 {
-      display: flex;
-      flex: 100%;
-      max-width: 100%;
-  }
-  .column-3 img {
-      /* width: calc(100% - 4px); */
-      height: auto;
-  }
-  .column .odd {
-      padding-right: 4px;
-  }
-  .column .even {
-      padding-left: 4px;
-  }
-}
-
-@media screen and (max-width: 575px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
-    }
-    .other-portfolios ul li {
-        margin: 0 1rem;
-    }
 }
