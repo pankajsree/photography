@@ -66,7 +66,7 @@
             </div>
 
             <div class="container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14598.50135623127!2d91.2705290388054!3d23.831918352786868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3753f41283c7cd73%3A0xad36cf4a148d70e0!2sRMS+Chowmuhani%2C+Krishna+Nagar%2C+Agartala%2C+Tripura+799001!5e0!3m2!1sen!2sin!4v1540726510566" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11563.265567706088!2d73.75599968775963!3d18.599093948364924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b97aaf571bed%3A0xc67346ba5a76673!2sWakad%2C+Pimpri-Chinchwad%2C+Maharashtra!5e0!3m2!1sen!2sin!4v1549563765543" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
 
         </main>

@@ -3,3 +3,12 @@ RewriteEngine On
 RewriteRule ^wedding.php/(.*)$ wedding.php?type=$1 [NC]
 RewriteRule ^wedding.php/$ wedding.php?type=pre [NC]
 RewriteRule ^wedding.php$ wedding.php?type=pre [NC]
+
+# RewriteRule ^fashion/$ fashion.php [NC]
+# RewriteRule ^fashion$ fashion.php [NC]
+#
+# RewriteRule ^food/$ food.php [NC]
+# RewriteRule ^food$ food.php [NC]
+#
+# RewriteRule ^corporate/$ corporate.php [NC]
+# RewriteRule ^corporate$ corporate.php [NC]

@@ -27,8 +27,6 @@
                     <li>
                         <a class='nav-home' href='" . __ROOT__ . "'>Home<div class='underline'></div></a>
                     </li><li>
-                        <a class='nav-about' href='" . __ROOT__ . "about'>About us<div class='underline'></div></a>
-                    </li><li>
                         <a class='nav-vnp' href='" . __ROOT__ . "vows-and-phereys'>Vows &amp; Phereys<div class='underline'></div></a>
                     </li><li>
                         <a class='nav-services' href='javascript:void(0);' data-toggle='collapse' data-target='#sm-services'>Services<div class='underline'></div></a>
@@ -99,6 +97,8 @@
                             </ul>
                         </div>
                     </li><li>
+                        <a class='nav-about' href='" . __ROOT__ . "about'>About us<div class='underline'></div></a>
+                    </li><li>
                         <a class='nav-contact' href='" . __ROOT__ . "contact'>Contact us<div class='underline'></div></a>
                     </li>
                 </ul>
@@ -133,10 +133,11 @@
             <div id='footer-block-1' class='col-6 col-sm-4 col-lg-4 b-r-footer'>
                 <div class='relative-middle d-inline-block text-right'>
                     Litmass Media &amp; Photography<br />
-                    Pune - 123456<br />
+                    Wakad, Pune - 411057<br />
                     Maharashtra, India<br />
-                    <i class='fas fa-phone'></i>&nbsp;+91-9089589666<br />
-                    <i class='far fa-envelope'></i>&nbsp;litmass.media@gmail.com
+                    <i class='fas fa-phone'></i>&nbsp;+91 - 96373 07615<br />
+                    <i class='fas fa-phone'></i>&nbsp;+91 - 96506 59479<br />
+                    <i class='far fa-envelope'></i>&nbsp;litmassmedia@gmail.com
                 </div>
             </div>
             <div id='footer-block-3' class='col-6 col-sm-4 d-none d-sm-block text-right text-sm-center'>

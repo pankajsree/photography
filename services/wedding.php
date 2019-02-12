@@ -89,7 +89,11 @@
         <?= $footer ?>
         <?= $script ?>
         <script>
-            $(".nav-services-wedding, .nav-services").addClass("active");
+            $(document).ready(function() {
+                $(".nav-services-wedding, .nav-services").addClass("active");
+                $("#nav-facebook").attr("href", "https://www.facebook.com/vowsnphereys/");
+                $("#nav-instagram").attr("href", "https://www.instagram.com");
+            });
         </script>
 
     </body>
