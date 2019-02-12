@@ -32,7 +32,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Commercial Photography</title>
+        <title>Fashion Services | Litmass Media</title>
         <?= $head ?>
         <link rel="stylesheet" href="../assets/css/services.css" />
     </head>
@@ -42,7 +42,7 @@
 
         <main>
 
-            <div class="pad-t-5 pad-btm-3 container">
+            <div class="pad-t-5 container">
                 <h1><span class="pad-h-1 b-b-black">Fashion Services</span></h1>
                 <p class="content-w-60">
                     <?= $content_top ?>

@@ -15,7 +15,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Commercial Photography</title>
+        <title>About us | Litmass Media</title>
         <?= $head ?>
         <link rel="stylesheet" href="assets/css/about.css" />
     </head>
@@ -38,20 +38,18 @@
                         </div>
                         <div class="col-12 col-md-8 col-lg-9">
                             <div class="content-block relative-middle pad-h-2">
-                                <h4 class="no-mar">Abhijit Deb</h4>
-                                <p class="font-weight-bold">Commercial Photographer</p>
+                                <h4 class="no-mar">Avijit D</h4>
+                                <p class="font-weight-bold">Creative Director</p>
                                 <p>
                                     <?= $row['abhi'] ?>
                                 </p>
                                 <p>
                                     <div class="social-container">
                                         <span class="b-b-black">Social Links</span><br />
-                                        <a href='https://www.facebook.com/'>
+                                        <a href='https://www.facebook.com/Oviedev'>
                                             <i class='fab fa-facebook'></i>
-                                        </a><a href='https://www.instagram.com/'>
+                                        </a><a href='https://www.instagram.com/abhijit.waits'>
                                             <i class='fab fa-instagram'></i>
-                                        </a><a href='https://www.linkedin.com/'>
-                                            <i class='fab fa-linkedin'></i>
                                         </a>
                                     </div>
                                 </p>
@@ -69,20 +67,16 @@
                         </div>
                         <div class="col-12 col-md-8 col-lg-9">
                             <div class="content-block relative-middle pad-h-2">
-                                <h4 class="no-mar">Deep Roy</h4>
-                                <p class="font-weight-bold">Commercial Photographer</p>
+                                <h4 class="no-mar">D Roy</h4>
+                                <p class="font-weight-bold">Chief Editor</p>
                                 <p>
                                     <?= $row['deep'] ?>
                                 </p>
                                 <p>
                                     <div class="social-container">
                                         <span class="b-b-black">Social Links</span><br />
-                                        <a href='https://www.facebook.com/'>
-                                            <i class='fab fa-facebook'></i>
-                                        </a><a href='https://www.instagram.com/'>
+                                        <a href='https://www.instagram.com/deep.roy04'>
                                             <i class='fab fa-instagram'></i>
-                                        </a><a href='https://www.linkedin.com/'>
-                                            <i class='fab fa-linkedin'></i>
                                         </a>
                                     </div>
                                 </p>

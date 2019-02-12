@@ -16,7 +16,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Commercial Photography</title>
+        <title>Food Portfolio | Litmass Media</title>
         <?= $head ?>
         <link rel="stylesheet" href="../assets/css/portfolio.css" />
         <link rel="stylesheet" href="../assets/css/lightbox.min.css" />

@@ -25,7 +25,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Commercial Photography</title>
+        <title>Litmass Media - Cinematic Films and Photography Services</title>
+        <meta name="keywords" content="Litmass, Photography" />
+        <meta name="description"  content="Litmass media and Vows & Phereys are the best service providers for corporate, food, fashion, wedding and prewedding photography in Pune, Maharashtra and India. They also create cinematic wedding and prewedding films and videos along with corporate videos and aerial surveys. They are professional photographers and film makers equipped with high end equipments and drones" />
         <?= $head ?>
         <link rel="stylesheet" href="assets/css/home.css" />
     </head>

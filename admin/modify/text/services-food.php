@@ -31,7 +31,7 @@
     <script>
     alert("UPDATE Successful");
         function redirect() {
-            window.location = "services-fashion";
+            window.location = "services-food";
         }
         setTimeout(redirect(), 5000);
 

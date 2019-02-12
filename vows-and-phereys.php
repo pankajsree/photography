@@ -32,7 +32,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Commercial Photography</title>
+        <title>Vows and Phereys</title>
         <?= $head ?>
         <link rel="stylesheet" href="assets/css/services.css" />
     </head>
@@ -42,7 +42,7 @@
 
         <main>
 
-            <div class="pad-t-5 pad-btm-3 container">
+            <div class="pad-t-5 container">
                 <h1><span class="pad-h-1 b-b-black">Vows &amp; Phereys</span></h1>
                 <p class="content-w-60">
                     <?= $content_top ?>
@@ -92,7 +92,7 @@
             $(document).ready(function() {
                 $(".nav-vnp").addClass("active");
                 $("#nav-facebook").attr("href", "https://www.facebook.com/vowsnphereys/");
-                $("#nav-instagram").attr("href", "https://www.instagram.com");
+                $("#nav-instagram").attr("href", "https://www.instagram.com/vowsnphereys/");
             });
 
         </script>

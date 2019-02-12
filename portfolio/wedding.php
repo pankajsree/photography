@@ -47,11 +47,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Commercial Photography</title>
+        <title>Portfolio | Vows and Phereys</title>
         <?= $head ?>
         <link rel="stylesheet" href="<?= __ROOT__ ?>assets/css/portfolio.css" />
         <link rel="stylesheet" href="<?= __ROOT__ ?>assets/css/lightbox.min.css" />
     </head>
+    <style>
+        iframe {
+            margin: 1rem 0;
+            width: calc(33.333333vw - 35px);
+            height: 17.5vw;
+        }
+        @media only screen
+            and (max-width: 767px) {
+            iframe {
+                width: calc(100vw - 35px);
+                height: 56vw;
+            }
+        }
+    </style>
     <body>
 
         <?= $header ?>
@@ -110,11 +124,16 @@
                 }
                 else if($type == "videos") {
                     ?>
-            <div id="wedding-videos" class="img-grid-block container pad-btm-3">
+            <div id="wedding-videos" class="img-grid-block container-fluid pad-btm-3">
                 <?php
+                    $display = "<div class=\"row justify-content-center\">";
                     for($i = 0; $i < $vdo; $i ++) {
-                        echo $iframes[$i]['link'];
+                        $display .= "<div class=\"col-12 col-md-4\">";
+                        $display .= $iframes[$i]['link'];
+                        $display .= "</div>";
                     }
+                    $display .= "</div>";
+                    echo $display;
                 ?>
             </div>
                     <?php
@@ -139,7 +158,7 @@
                 var action_url = root + "portfolio/wedding/";
                 var action_id = "#action-" + type;
                 $("#nav-facebook").attr("href", "https://www.facebook.com/vowsnphereys/");
-                $("#nav-instagram").attr("href", "https://www.instagram.com");
+                $("#nav-instagram").attr("href", "https://www.instagram.com/vowsnphereys/");
                 $(".nav-portfolio, .nav-portfolio-wedding").addClass("active");
                 $(action_id).addClass("active");
 

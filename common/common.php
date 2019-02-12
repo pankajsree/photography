@@ -132,7 +132,7 @@
             </div>
             <div id='footer-block-1' class='col-6 col-sm-4 col-lg-4 b-r-footer'>
                 <div class='relative-middle d-inline-block text-right'>
-                    Litmass Media &amp; Photography<br />
+                    Litmass Media<br />
                     Wakad, Pune - 411057<br />
                     Maharashtra, India<br />
                     <i class='fas fa-phone'></i>&nbsp;+91 - 96373 07615<br />
@@ -150,11 +150,11 @@
 
                     <h4>Litmass Media</h4>
                     <a href='https://www.facebook.com/Litmassmedia/' target='_blank'><i class='fab fa-facebook'></i></a>
-                    <a href='https://www.instagram.com/' target='_blank'><i class='fab fa-instagram'></i></a>
+                    <a href='https://www.instagram.com/litmassmedia/' target='_blank'><i class='fab fa-instagram'></i></a>
 
                     <h4>Vows &amp; Phereys</h4>
                     <a href='https://www.facebook.com/vowsnphereys/' target='_blank'><i class='fab fa-facebook'></i></a>
-                    <a href='https://www.instagram.com/' target='_blank'><i class='fab fa-instagram'></i></a>
+                    <a href='https://www.instagram.com/vowsnphereys/' target='_blank'><i class='fab fa-instagram'></i></a>
                 </div>
             </div>
         </div>

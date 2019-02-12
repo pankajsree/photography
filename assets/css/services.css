@@ -7,15 +7,13 @@
 }
 
 .services-block .caption {
-    font-family: var(--font-2);
+    font-family: var(--font-1);
     font-size: 2rem;
     padding: 2rem 0 0.5rem 0;
-    letter-spacing: 0.15rem;
 }
 
 .services-block .content {
     font-family: var(--font-2);
-    letter-spacing: 1px;
     text-align: justify;
     margin-bottom: 2rem;
 }

@@ -16,7 +16,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Commercial Photography</title>
+        <title>Contact us | Litmass Media</title>
         <?= $head ?>
         <link rel="stylesheet" href="assets/css/contact.css" />
     </head>

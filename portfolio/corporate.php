@@ -28,7 +28,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Commercial Photography</title>
+        <title>Corporate Portfolio | Litmass Media</title>
         <?= $head ?>
         <link rel="stylesheet" href="../assets/css/portfolio.css" />
         <link rel="stylesheet" href="../assets/css/lightbox.min.css" />
@@ -36,6 +36,15 @@
     <style>
         iframe {
             margin: 1rem 0;
+            width: calc(33.333333vw - 35px);
+            height: 17.5vw;
+        }
+        @media only screen
+            and (max-width: 767px) {
+            iframe {
+                width: calc(100vw - 35px);
+                height: 56vw;
+            }
         }
     </style>
     <body>
@@ -45,15 +54,20 @@
         <main>
 
             <div class="pad-t-5 pad-btm-3 container">
-                <h1><span class="pad-h-1 b-b-black">Corporate Videos</span></h1>
+                <h1><span class="pad-h-1 b-b-black">Corporate Films</span></h1>
             </div>
 
-            <div class="img-grid-block container text-center pad-btm-3">
+            <div class="img-grid-block container-fluid text-center pad-btm-3">
                 <!-- <h2><span class="pad-h-1 b-b-black">Videos</span></h2> -->
                 <?php
+                    $display = "<div class=\"row justify-content-center\">";
                     for($i = 0; $i < $count; $i ++) {
-                        echo $iframes[$i]['link'];
+                        $display .= "<div class=\"col-12 col-md-4\">";
+                        $display .= $iframes[$i]['link'];
+                        $display .= "</div>";
                     }
+                    $display .= "</div>";
+                    echo $display;
                 ?>
             </div>
 

@@ -16,12 +16,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Commercial Photography</title>
+        <title>Fashion Portfolio | Litmass Media</title>
         <?= $head ?>
         <link rel="stylesheet" href="../assets/css/portfolio.css" />
         <link rel="stylesheet" href="../assets/css/lightbox.min.css" />
     </head>
-    <body class="">
+    <body>
 
         <?= $header ?>
 
