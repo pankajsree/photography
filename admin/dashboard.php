@@ -38,7 +38,7 @@
                 <a href="modify/text/services-corporate" class="link-button">Services Corporate</a>
             </div>
 
-            <h2><span class="pad-h-1 b-b-black">Add / Modify Images &amp; Videos</span></h2>
+            <h2><span class="pad-h-1 b-b-black">Add / Modify Images &amp; Films</span></h2>
             <div class="dash-blocks">
                 <a href="modify/images/home" class="link-button">Home</a>
                 <a href="modify/images/about" class="link-button">About us</a>
@@ -48,14 +48,12 @@
                 <a href="modify/images/services-corporate" class="link-button">Services Corporate</a>
                 <a href="modify/images/portfolio-pre-wedding" class="link-button">Portfolio Pre-Wedding</a>
                 <a href="modify/images/portfolio-wedding" class="link-button">Portfolio Wedding</a>
-                <a href="modify/images/portfolio-wedding-videos" class="link-button">Portfolio Wedding Videos</a>
+                <a href="modify/images/portfolio-wedding-films" class="link-button">Portfolio Wedding Films</a>
                 <a href="modify/images/portfolio-fashion" class="link-button">Portfolio Fashion</a>
                 <a href="modify/images/portfolio-food" class="link-button">Portfolio Food</a>
-                <a href="modify/images/portfolio-corporate" class="link-button">Portfolio Corporate Videos</a>
+                <a href="modify/images/portfolio-corporate" class="link-button">Portfolio Corporate Films</a>
             </div>
         </div>
-
-
 
         </div>
         <?= $script ?>

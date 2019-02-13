@@ -18,14 +18,28 @@
         }
 
     ?>
-    <script>
-    alert("UPDATE Successful");
-        function redirect() {
-            window.location = "about";
-        }
-        setTimeout(redirect(), 5000);
 
-    </script>
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Success</title>
+            <?= $script ?>
+            <?= $swal_all ?>
+        </head>
+        <body>
+            <script>
+                Swal.fire({
+                    title: 'Done☺',
+                    text: 'Text updated Successfully !!!',
+                    type: 'success'
+                }).then(function() {
+                    window.location = "about";
+                });
+            </script>
+        </body>
+    </html>
+
     <?php
     }
 
@@ -127,3 +141,4 @@
         <?= $script ?>
     </body>
 </html>
+<?php } ?>

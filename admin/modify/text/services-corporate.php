@@ -28,14 +28,28 @@
         }
 
     ?>
-    <script>
-    alert("UPDATE Successful");
-        function redirect() {
-            window.location = "services-corporate";
-        }
-        setTimeout(redirect(), 5000);
 
-    </script>
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Success</title>
+            <?= $script ?>
+            <?= $swal_all ?>
+        </head>
+        <body>
+            <script>
+                Swal.fire({
+                    title: 'Done☺',
+                    text: 'Text updated Successfully !!!',
+                    type: 'success'
+                }).then(function() {
+                    window.location = "services-corporate";
+                });
+            </script>
+        </body>
+    </html>
+
     <?php
     }
 
@@ -61,7 +75,6 @@
         while ($row = mysqli_fetch_assoc($result)) {
             $services[] = $row;
         }
-    }
 
 ?>
 
@@ -160,3 +173,6 @@
         <?= $script ?>
     </body>
 </html>
+<?php
+    }
+?>

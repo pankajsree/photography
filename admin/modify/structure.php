@@ -150,7 +150,7 @@
             <span id="admin-name">Admin - <span class="b-b-black"><?= $_SESSION['name'] ?></span></span>
             <a href="../dashboard" id="dashboard" class="link-button">Dashboard</a>
             <a href="../logout" id="logout" class="link-button">Logout</a>
-            <h2 class="mid-line"><span class="text">Images / Videos Count</span></h2>
+            <h2 class="mid-line"><span class="text">Images / Films Count</span></h2>
             <form action="" method="post">
                 <div class="row">
                     <div class="col-5 label">Carousel&nbsp;:</div>
@@ -171,7 +171,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-5 label">Wedding Videos&nbsp;:</div>
+                    <div class="col-5 label">Wedding Films&nbsp;:</div>
                     <div class="col-7">
                         <input type="text" name="p_wedding_video" value="<?= $p_wedding_video ?>" />
                     </div>
@@ -189,7 +189,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-5 label">Corporate Videos&nbsp;:</div>
+                    <div class="col-5 label">Corporate Films&nbsp;:</div>
                     <div class="col-7">
                         <input type="text" name="p_corporate" value="<?= $p_corporate ?>" />
                     </div>

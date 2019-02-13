@@ -59,14 +59,28 @@
         }
 
     ?>
-    <script>
-    alert("UPDATE Successful");
-        function redirect() {
-            window.location = "home";
-        }
-        setTimeout(redirect(), 5000);
 
-    </script>
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Success</title>
+            <?= $script ?>
+            <?= $swal_all ?>
+        </head>
+        <body>
+            <script>
+                Swal.fire({
+                    title: 'Done☺',
+                    text: 'Text updated Successfully !!!',
+                    type: 'success'
+                }).then(function() {
+                    window.location = "home";
+                });
+            </script>
+        </body>
+    </html>
+
     <?php
     }
 
@@ -78,7 +92,6 @@
         }
         $row = mysqli_fetch_assoc($result);
         $count = $row['carousel'];
-    }
 
 ?>
 
@@ -242,3 +255,4 @@
         </script>
     </body>
 </html>
+<?php } ?>

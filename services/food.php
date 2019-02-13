@@ -43,7 +43,7 @@
         <main>
 
             <div class="pad-t-5 container">
-                <h1><span class="pad-h-1 b-b-black">Food Services</span></h1>
+                <h1><span class="pad-h-1 b-b-black">Food</span></h1>
                 <p class="content-w-60">
                     <?= $content_top ?>
                 </p>
@@ -53,7 +53,6 @@
                 for($i = 1; $i <= $count; $i ++) {
             ?>
             <div class="services-block container pad-btm-3">
-                <div class="caption"><?= $heading[($i - 1)] ?></div>
                 <div class="content">
                     <?= $content[($i - 1)] ?>
                 </div>

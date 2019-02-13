@@ -59,7 +59,7 @@
                             $type = "wed";
                             break;
                         case 3:
-                            $type = "videos";
+                            $type = "films";
                             break;
                         default:
                             $type = "pre";

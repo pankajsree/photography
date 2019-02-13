@@ -57,14 +57,28 @@
         }
 
     ?>
-    <script>
-    alert("UPDATE Successful");
-        function redirect() {
-            window.location = "portfolio-pre-wedding";
-        }
-        setTimeout(redirect(), 5000);
 
-    </script>
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Success</title>
+            <?= $script ?>
+            <?= $swal_all ?>
+        </head>
+        <body>
+            <script>
+                Swal.fire({
+                    title: 'Done☺',
+                    text: 'Text updated Successfully !!!',
+                    type: 'success'
+                }).then(function() {
+                    window.location = "portfolio-pre-wedding";
+                });
+            </script>
+        </body>
+    </html>
+
     <?php
     }
 
@@ -76,7 +90,6 @@
         }
         $row = mysqli_fetch_assoc($result);
         $count = $row['p_wedding_pre'];
-    }
 
 ?>
 
@@ -218,3 +231,4 @@
         </script>
     </body>
 </html>
+<?php } ?>

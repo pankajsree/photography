@@ -25,14 +25,28 @@
         }
 
     ?>
-    <script>
-    alert("UPDATE Successful");
-        function redirect() {
-            window.location = "portfolio-wedding-videos";
-        }
-        setTimeout(redirect(), 5000);
 
-    </script>
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Success</title>
+            <?= $script ?>
+            <?= $swal_all ?>
+        </head>
+        <body>
+            <script>
+                Swal.fire({
+                    title: 'Done☺',
+                    text: 'Text updated Successfully !!!',
+                    type: 'success'
+                }).then(function() {
+                    window.location = "portfolio-wedding-films";
+                });
+            </script>
+        </body>
+    </html>
+
     <?php
     }
 
@@ -56,7 +70,6 @@
         while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
             $iframes[] = $row;
         }
-    }
 
 ?>
 
@@ -116,13 +129,13 @@
             <a href="../../logout" id="logout" class="link-button">Logout</a>
             <form class="" action="" method="post" enctype="multipart/form-data">
                 <input type="hidden" value="" name="updated_col" id="updated-col" />
-                <h2 class="mid-line"><span class="text">Wedding Video URLs</span></h2>
+                <h2 class="mid-line"><span class="text">Wedding Film URLs</span></h2>
                 <?php
                     $display = "";
                     for($i = 0; $i < $count; $i ++) {
                         $text = $iframes[$i]['link'];
                         $display .= "
-                            <textarea id=\"video" . ($i + 1) . "\" class=\"video-link\" data-serial=\"" . ($i + 1) . "\" name=\"video" . ($i + 1) . "\" placeholder=\"Youtube link for Video " . ($i + 1) . "\">$text</textarea>
+                            <textarea id=\"video" . ($i + 1) . "\" class=\"video-link\" data-serial=\"" . ($i + 1) . "\" name=\"video" . ($i + 1) . "\" placeholder=\"Youtube link for Film " . ($i + 1) . "\">$text</textarea>
                         ";
                     }
                     echo $display;
@@ -151,3 +164,4 @@
         </script>
     </body>
 </html>
+<?php } ?>

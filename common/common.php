@@ -100,6 +100,8 @@
                         <a class='nav-about' href='" . __ROOT__ . "about'>About us<div class='underline'></div></a>
                     </li><li>
                         <a class='nav-contact' href='" . __ROOT__ . "contact'>Contact us<div class='underline'></div></a>
+                    </li><li>
+                        <a class='nav-faqs' href='" . __ROOT__ . "faqs'>FAQs<div class='underline'></div></a>
                     </li>
                 </ul>
                 <div class='d-block d-xl-inline-block nav-social'>
@@ -174,5 +176,6 @@
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js' integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy' crossorigin='anonymous'></script>
     <script src='" . __ROOT__ . "assets/js/common.js'></script>
     ";
+    $swal_all = "<script src='" . __ROOT__ . "assets/sweetalert2/dist/sweetalert2.all.min.js'></script>";
 
 ?>

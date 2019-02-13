@@ -1,7 +1,7 @@
 <?php
 
     $from = "help@litmassmedia.com";
-    $to = "litmassmedia@gmail.com";
+    $to = "vowsnphereys@gmail.com";
     $subject = "Feedback - " . date("YmdHis");
 
     $name = $_POST['cus_name'];

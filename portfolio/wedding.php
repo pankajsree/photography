@@ -9,7 +9,7 @@
         $type = $_GET['type'];
     }
 
-    if($type == "pre" || $type == "wed" || $type == "videos") {
+    if($type == "pre" || $type == "wed" || $type == "films") {
 
     }
     else {
@@ -55,8 +55,8 @@
     <style>
         iframe {
             margin: 1rem 0;
-            width: calc(33.333333vw - 35px);
-            height: 17.5vw;
+            width: calc(50vw - 35px);
+            height: 27vw;
         }
         @media only screen
             and (max-width: 767px) {
@@ -77,7 +77,7 @@
                 <div class="action-container">
                     <div id="action-pre" class="action-button" data-url="pre">Pre Wedding</div>
                     <div id="action-wed" class="action-button" data-url="wed">Wedding</div>
-                    <div id="action-videos" class="action-button" data-url="videos">Wedding Videos</div>
+                    <div id="action-films" class="action-button" data-url="films">Wedding Films</div>
                 </div>
             </div>
 
@@ -122,13 +122,13 @@
             </div>
                     <?php
                 }
-                else if($type == "videos") {
+                else if($type == "films") {
                     ?>
             <div id="wedding-videos" class="img-grid-block container-fluid pad-btm-3">
                 <?php
                     $display = "<div class=\"row justify-content-center\">";
                     for($i = 0; $i < $vdo; $i ++) {
-                        $display .= "<div class=\"col-12 col-md-4\">";
+                        $display .= "<div class=\"col-12 col-md-6\">";
                         $display .= $iframes[$i]['link'];
                         $display .= "</div>";
                     }
@@ -142,10 +142,6 @@
 
                 }
             ?>
-
-            <div class="text-center">
-                <a href="<?= __ROOT__ ?>services/wedding" class="link-button">View Services</a>
-            </div>
 
         </main>
 

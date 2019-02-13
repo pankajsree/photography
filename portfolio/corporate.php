@@ -36,8 +36,8 @@
     <style>
         iframe {
             margin: 1rem 0;
-            width: calc(33.333333vw - 35px);
-            height: 17.5vw;
+            width: calc(50vw - 35px);
+            height: 27vw;
         }
         @media only screen
             and (max-width: 767px) {
@@ -58,11 +58,11 @@
             </div>
 
             <div class="img-grid-block container-fluid text-center pad-btm-3">
-                <!-- <h2><span class="pad-h-1 b-b-black">Videos</span></h2> -->
+                <!-- <h2><span class="pad-h-1 b-b-black">Films</span></h2> -->
                 <?php
                     $display = "<div class=\"row justify-content-center\">";
                     for($i = 0; $i < $count; $i ++) {
-                        $display .= "<div class=\"col-12 col-md-4\">";
+                        $display .= "<div class=\"col-12 col-md-6\">";
                         $display .= $iframes[$i]['link'];
                         $display .= "</div>";
                     }
