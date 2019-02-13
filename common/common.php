@@ -108,7 +108,7 @@
                     <div class='social-container'>
                         <a id='nav-facebook' href='https://www.facebook.com/Litmassmedia/' target='_blank'>
                             <i class='fab fa-facebook'></i>
-                        </a><a id='nav-instagram' href='https://www.instagram.com/' target='_blank'>
+                        </a><a id='nav-instagram' href='https://www.instagram.com/litmassmedia/' target='_blank'>
                             <i class='fab fa-instagram'></i>
                         </a>
                     </div>
@@ -125,48 +125,50 @@
 
     $footer = "
     <!-- <div class='footer-top'></div> -->
-    <footer class='container-fluid'>
-        <div class='row text-center pad-btm-1'>
-            <div class='col-12 d-block d-sm-none'>
-                <div class='content-w-60 d-inline-block pad-btm-1'>
-                    <img class='img-res' src='" . __ROOT__ . "images/logo-sq.png' alt='' />
+    <footer>
+        <div class=\"container\">
+            <div class='row text-center pad-btm-1'>
+                <div class='col-12 d-block d-sm-none'>
+                    <div class='content-w-60 d-inline-block pad-btm-1'>
+                        <img class='img-res' src='" . __ROOT__ . "images/logo-sq.png' alt='' />
+                    </div>
                 </div>
-            </div>
-            <div id='footer-block-1' class='col-6 col-sm-4 col-lg-4 b-r-footer'>
-                <div class='relative-middle d-inline-block text-right'>
-                    Litmass Media<br />
-                    Wakad, Pune - 411057<br />
-                    Maharashtra, India<br />
-                    <i class='fas fa-phone'></i>&nbsp;+91 - 96373 07615<br />
-                    <i class='fas fa-phone'></i>&nbsp;+91 - 96506 59479<br />
-                    <i class='far fa-envelope'></i>&nbsp;litmassmedia@gmail.com
+                <div id='footer-block-1' class='col-6 col-sm-4 col-lg-4 b-r-footer'>
+                    <div class='relative-middle d-inline-block text-right'>
+                        Litmass Media<br />
+                        Wakad, Pune - 411057<br />
+                        Maharashtra, India<br />
+                        <i class='fas fa-phone'></i>&nbsp;+91 - 96373 07615<br />
+                        <i class='fas fa-phone'></i>&nbsp;+91 - 96506 59479<br />
+                        <i class='far fa-envelope'></i>&nbsp;litmassmedia@gmail.com
+                    </div>
                 </div>
-            </div>
-            <div id='footer-block-3' class='col-6 col-sm-4 d-none d-sm-block text-right text-sm-center'>
-                <div class='relative-middle'>
-                    <img class='v-middle limit-img img-res' src='" . __ROOT__ . "images/logo-sq.png' alt='' />
+                <div id='footer-block-3' class='col-6 col-sm-4 d-none d-sm-block text-right text-sm-center'>
+                    <div class='relative-middle'>
+                        <img class='v-middle limit-img img-res' src='" . __ROOT__ . "images/logo-sq.png' alt='' />
+                    </div>
                 </div>
-            </div>
-            <div id='footer-block-5' class='col-6 col-sm-4 col-lg-4 b-l-footer'>
-                <div class='relative-middle d-inline-block text-center'>
+                <div id='footer-block-5' class='col-6 col-sm-4 col-lg-4 b-l-footer'>
+                    <div class='relative-middle d-inline-block text-center'>
 
-                    <h4>Litmass Media</h4>
-                    <a href='https://www.facebook.com/Litmassmedia/' target='_blank'><i class='fab fa-facebook'></i></a>
-                    <a href='https://www.instagram.com/litmassmedia/' target='_blank'><i class='fab fa-instagram'></i></a>
+                        <h4>Litmass Media</h4>
+                        <a href='https://www.facebook.com/Litmassmedia/' target='_blank'><i class='fab fa-facebook'></i></a>
+                        <a href='https://www.instagram.com/litmassmedia/' target='_blank'><i class='fab fa-instagram'></i></a>
 
-                    <h4>Vows &amp; Phereys</h4>
-                    <a href='https://www.facebook.com/vowsnphereys/' target='_blank'><i class='fab fa-facebook'></i></a>
-                    <a href='https://www.instagram.com/vowsnphereys/' target='_blank'><i class='fab fa-instagram'></i></a>
+                        <h4>Vows &amp; Phereys</h4>
+                        <a href='https://www.facebook.com/vowsnphereys/' target='_blank'><i class='fab fa-facebook'></i></a>
+                        <a href='https://www.instagram.com/vowsnphereys/' target='_blank'><i class='fab fa-instagram'></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class='copyright d-block'>
-            &copy;2019 LITMASS MEDIA - All rights reserved
-        </div>
-        <div class='disclaimer d-block text-center'>
-            <a href='#'>Disclaimer</a> |
-            <a href='#'>Hyperlink Policy</a> |
-            <a href='#'>Feedback</a>
+            <div class='copyright d-block'>
+                &copy;2019 LITMASS MEDIA - All rights reserved
+            </div>
+            <div class='disclaimer d-block text-center'>
+                <a href='#'>Disclaimer</a> |
+                <a href='#'>Hyperlink Policy</a> |
+                <a href='#'>Feedback</a>
+            </div>
         </div>
     </footer>
     ";

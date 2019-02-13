@@ -501,7 +501,7 @@ footer #footer-block-5 a {
 }
 
 footer #footer-block-3 {
-    padding: 2rem 7.5rem;
+    padding: 2rem 3rem;
 }
 
 footer #footer-block-5 a {
@@ -604,10 +604,6 @@ footer .website-developer a {
     .xs-pad-btm-1 {
         padding-bottom: 1rem;
     }
-}
-
-@media only screen
-    and (max-width: 575px) {
     #footer-block-2 {
         border: 0 !important;
     }
