@@ -73,6 +73,7 @@
 
         <?= $footer ?>
         <?= $script ?>
+        <?= $swal_all ?>
         <script src="assets/js/contact.js"></script>
 
     </body>
