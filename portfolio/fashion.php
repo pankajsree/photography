@@ -36,7 +36,7 @@
                     $display = "<div class=\"row\">";
                     for($i = 0; $i < $count; $i ++) {
                         $display .= "
-                            <div class=\"col-gap col-12 col-md-6 col-lg-4\">
+                            <div class=\"col-gap col-6 col-lg-4\">
                                 <a href=\"../images/portfolio/fashion/" . ($i + 1) . ".jpg\" data-lightbox=\"Vows & Phereys\" data-title=\"\">
                                     <img class=\"img-res\" src=\"../images/portfolio/fashion/square/" . ($i + 1) . ".jpg\" title=\"\" alt=\"\">
                                 </a>
@@ -46,10 +46,6 @@
                     $display .= "</div>";
                     echo $display;
                 ?>
-            </div>
-
-            <div class="text-center">
-                <a href="<?= __ROOT__ ?>services/fashion" class="link-button">View Services</a>
             </div>
 
         </main>

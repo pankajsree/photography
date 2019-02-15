@@ -71,10 +71,6 @@
                 ?>
             </div>
 
-            <div class="text-center">
-                <a href="<?= __ROOT__ ?>services/corporate" class="link-button">View Services</a>
-            </div>
-
         </main>
 
         <?= $footer ?>

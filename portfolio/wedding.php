@@ -89,7 +89,7 @@
                     $display = "<div class=\"row\">";
                     for($i = 0; $i < $pre; $i ++) {
                         $display .= "
-                            <div class=\"col-gap col-12 col-md-6 col-lg-4\">
+                            <div class=\"col-gap col-6 col-lg-4\">
                                 <a href=\"".__ROOT__."images/portfolio/wedding/pre/" . ($i + 1) . ".jpg\" data-lightbox=\"Pre Wedding\" data-title=\"\">
                                     <img class=\"img-res\" src=\"".__ROOT__."images/portfolio/wedding/pre/square/" . ($i + 1) . ".jpg\" title=\"\" alt=\"\">
                                 </a>
@@ -109,7 +109,7 @@
                     $display = "<div class=\"row\">";
                     for($i = 0; $i < $wed; $i ++) {
                         $display .= "
-                            <div class=\"col-gap col-12 col-md-6 col-lg-4\">
+                            <div class=\"col-gap col-6 col-lg-4\">
                                 <a href=\"".__ROOT__."images/portfolio/wedding/wed/" . ($i + 1) . ".jpg\" data-lightbox=\"Wedding\" data-title=\"\">
                                     <img class=\"img-res\" src=\"".__ROOT__."images/portfolio/wedding/wed/square/" . ($i + 1) . ".jpg\" title=\"\" alt=\"\">
                                 </a>

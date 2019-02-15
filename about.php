@@ -46,9 +46,9 @@
                                 <p>
                                     <div class="social-container">
                                         <span class="b-b-black">Social Links</span><br />
-                                        <a href='https://www.facebook.com/Oviedev'>
+                                        <a href='https://www.facebook.com/Oviedev' target="_blank">
                                             <i class='fab fa-facebook'></i>
-                                        </a><a href='https://www.instagram.com/abhijit.waits'>
+                                        </a><a href='https://www.instagram.com/focusonavijit' target="_blank">
                                             <i class='fab fa-instagram'></i>
                                         </a>
                                     </div>
@@ -75,7 +75,7 @@
                                 <p>
                                     <div class="social-container">
                                         <span class="b-b-black">Social Links</span><br />
-                                        <a href='https://www.instagram.com/deep.roy04'>
+                                        <a href='https://www.instagram.com/deep.roy04' target="_blank">
                                             <i class='fab fa-instagram'></i>
                                         </a>
                                     </div>

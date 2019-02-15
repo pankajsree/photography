@@ -5,9 +5,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>About us | Litmass Media</title>
+        <title>FAQs | Litmass Media</title>
         <?= $head ?>
         <style>
+            h1 {
+                margin-bottom: 4rem;
+            }
             .question {
                 font-weight: bold;
             }
