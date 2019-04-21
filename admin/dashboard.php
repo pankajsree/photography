@@ -54,8 +54,7 @@
                 <a href="modify/images/portfolio-corporate" class="link-button">Portfolio Corporate Films</a>
             </div>
         </div>
-
-        </div>
+        
         <?= $script ?>
     </body>
 </html>

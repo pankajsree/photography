@@ -651,10 +651,16 @@ and (max-width:1199px) {
         padding-right: 0;
         left: 50%;
     }
-    .sm-sub-menu ul li a:hover .underline {
-        width: 100% !important;
+    #nav-2 a:hover .underline {
+        width: 0 !important;
+    }
+    #nav-2 a.active:hover .underline {
+        width: 60% !important;
     }
     .sm-sub-menu a.active .underline {
+        width: 100% !important;
+    }
+    #nav-2 .sm-sub-menu a.active:hover .underline {
         width: 100% !important;
     }
 }

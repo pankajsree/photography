@@ -164,11 +164,6 @@
             <div class='copyright d-block'>
                 &copy;2019 LITMASS MEDIA - All rights reserved
             </div>
-            <div class='disclaimer d-block text-center'>
-                <a href='#'>Disclaimer</a> |
-                <a href='#'>Hyperlink Policy</a> |
-                <a href='#'>Feedback</a>
-            </div>
         </div>
     </footer>
     ";

@@ -79,3 +79,14 @@ h2 {
 #p_wedding-page #wedding-videos {
     text-align: center;
 }
+
+@media only screen and (max-width: 767px) {
+    .action-button:hover {
+        background-color: transparent;
+        color: #000;
+    }
+    .action-button.active:hover {
+        background-color: #141516;
+        color: #fff;
+    }
+}
